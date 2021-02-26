@@ -86,7 +86,7 @@ $post = [
 
 dump($tags); // ['foo', 'bar']
 dump($gallery); // [['image' => 'image.jpg'], ['image' => 'image2.jpg']]
-dump($article) // ['title' => 'Article 1', 'slug' => 'article-1', ...] without tags and gallery
+dump($article) // ['title' => 'Article 1', 'slug' => 'article-1', 'description' => 'Lorem ipsum']
 ```
 
 Destructuring with multiple grouped keys
@@ -107,7 +107,7 @@ $post = [
 
 dump($slug); // article-1
 dump($meta); // ['tags' => ['foo', 'bar'], 'gallery' => ['image' => 'image.jpg'], ['image' => 'image2.jpg']]
-dump($article) // ['title' => 'Article 1', 'slug' => 'article-1', ...] without slug, tags and gallery
+dump($article) // ['title' => 'Article 1', 'description' => 'Lorem ipsum']
 
 [$notFoundGroup, $article] = Arr::destructure($post, [['notFound1', 'notFound2']]);
 
