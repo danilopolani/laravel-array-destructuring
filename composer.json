@@ -1,0 +1,51 @@
+{
+    "name": "danilopolani/laravel-array-destructuring",
+    "description": "Powerful array destructuring for Laravel",
+    "keywords": [
+        "theraloss",
+        "array destructuring",
+        "laravel"
+    ],
+    "homepage": "https://github.com/danilopolani/laravel-array-destructuring",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Danilo Polani",
+            "email": "danilo.polani@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Danilopolani\\ArrayDestructuring\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Danilopolani\\ArrayDestructuring\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Danilopolani\\ArrayDestructuring\\ArrayDestructuringServiceProvider"
+            ]
+        }
+    }
+}
